@@ -9,13 +9,17 @@
   <body>
     <p id="description">This is a description</p>
     <form id = "survey-form">
-      <label for = "name">Name </label>
-      <input id = "name" type = "text" required/><br/>
-      <label for = "email">E-mail address</label>
-      <input id = "email" type = "email" required/><br>
-      <label for = "number">Phone Number:</label>
-      <input type = "number" id = "number" min = "1" max = "14" required/>
-
+      <label for = "name" id = "name-label">Name:</label>
+      <input id = "name" type = "text" placeholder = "Name" required/><br/>
+      <label for = "email" id = "email-label">E-mail address:</label>
+      <input id = "email" type = "email" placeholder = "E-mail adress" required/><br>
+      <label for = "number" id = "number-label">Phone Number:</label>
+      <input type = "number" id = "number" min = "1" max = "14" placeholder = "phone number" required/><br/>
+      <label for = "dropdown">Last finished education</label>
+      <select id = "dropdown">
+        <option value = "highschool">Highschool</option>
+        <option value = "bachelordegree">Bachelor Degree</option>
+      </select>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
